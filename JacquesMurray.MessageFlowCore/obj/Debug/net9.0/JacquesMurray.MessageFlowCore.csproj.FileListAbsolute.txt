@@ -1,0 +1,13 @@
+d:\Source\Repos\Jacques-Murray\JacquesMurray.MessageFlowCore\JacquesMurray.MessageFlowCore\obj\Debug\net9.0\JacquesMurray.MessageFlowCore.csproj.AssemblyReference.cache
+d:\Source\Repos\Jacques-Murray\JacquesMurray.MessageFlowCore\JacquesMurray.MessageFlowCore\obj\Debug\net9.0\JacquesMurray.MessageFlowCore.GeneratedMSBuildEditorConfig.editorconfig
+d:\Source\Repos\Jacques-Murray\JacquesMurray.MessageFlowCore\JacquesMurray.MessageFlowCore\obj\Debug\net9.0\JacquesMurray.MessageFlowCore.AssemblyInfoInputs.cache
+d:\Source\Repos\Jacques-Murray\JacquesMurray.MessageFlowCore\JacquesMurray.MessageFlowCore\obj\Debug\net9.0\JacquesMurray.MessageFlowCore.AssemblyInfo.cs
+d:\Source\Repos\Jacques-Murray\JacquesMurray.MessageFlowCore\JacquesMurray.MessageFlowCore\obj\Debug\net9.0\JacquesMurray.MessageFlowCore.csproj.CoreCompileInputs.cache
+d:\Source\Repos\Jacques-Murray\JacquesMurray.MessageFlowCore\JacquesMurray.MessageFlowCore\obj\Debug\net9.0\JacquesMurray.MessageFlowCore.sourcelink.json
+d:\Source\Repos\Jacques-Murray\JacquesMurray.MessageFlowCore\JacquesMurray.MessageFlowCore\bin\Debug\net9.0\JacquesMurray.MessageFlowCore.deps.json
+d:\Source\Repos\Jacques-Murray\JacquesMurray.MessageFlowCore\JacquesMurray.MessageFlowCore\bin\Debug\net9.0\JacquesMurray.MessageFlowCore.dll
+d:\Source\Repos\Jacques-Murray\JacquesMurray.MessageFlowCore\JacquesMurray.MessageFlowCore\bin\Debug\net9.0\JacquesMurray.MessageFlowCore.pdb
+d:\Source\Repos\Jacques-Murray\JacquesMurray.MessageFlowCore\JacquesMurray.MessageFlowCore\obj\Debug\net9.0\JacquesMurray.MessageFlowCore.dll
+d:\Source\Repos\Jacques-Murray\JacquesMurray.MessageFlowCore\JacquesMurray.MessageFlowCore\obj\Debug\net9.0\refint\JacquesMurray.MessageFlowCore.dll
+d:\Source\Repos\Jacques-Murray\JacquesMurray.MessageFlowCore\JacquesMurray.MessageFlowCore\obj\Debug\net9.0\JacquesMurray.MessageFlowCore.pdb
+d:\Source\Repos\Jacques-Murray\JacquesMurray.MessageFlowCore\JacquesMurray.MessageFlowCore\obj\Debug\net9.0\ref\JacquesMurray.MessageFlowCore.dll
