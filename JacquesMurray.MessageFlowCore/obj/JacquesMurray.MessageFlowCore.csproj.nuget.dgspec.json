@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Source\\Repos\\Jacques-Murray\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore.csproj": {}
+    "D:\\Source\\Repos\\Jacques-Murray\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore.csproj": {}
   },
   "projects": {
-    "d:\\Source\\Repos\\Jacques-Murray\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore.csproj": {
-      "version": "1.0.0",
+    "D:\\Source\\Repos\\Jacques-Murray\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore.csproj": {
+      "version": "1.0.0-preview.1",
       "restore": {
-        "projectUniqueName": "d:\\Source\\Repos\\Jacques-Murray\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore.csproj",
+        "projectUniqueName": "D:\\Source\\Repos\\Jacques-Murray\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore.csproj",
         "projectName": "JacquesMurray.MessageFlowCore",
-        "projectPath": "d:\\Source\\Repos\\Jacques-Murray\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore.csproj",
+        "projectPath": "D:\\Source\\Repos\\Jacques-Murray\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore.csproj",
         "packagesPath": "C:\\Users\\jmmur\\.nuget\\packages\\",
-        "outputPath": "d:\\Source\\Repos\\Jacques-Murray\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore\\obj\\",
+        "outputPath": "D:\\Source\\Repos\\Jacques-Murray\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -164,12 +164,13 @@ internal class MessageFlowServiceResolver : IMessageFlowServiceResolver
     /// <inheritdoc />
     public IEnumerable<T> GetServices<T>() where T : class
     {
-        return _serviceProvider.GetServices(typeof(T)).Cast<T>().Where(x => x != null);
+        return _serviceProvider.GetServices(typeof(T)).Cast<T?>().Where(x => x != null)!;
     }
 
     /// <inheritdoc />
     public IEnumerable<object> GetServices(Type serviceType)
     {
-        return _serviceProvider.GetServices(serviceType).Where(x => x != null);
+        // Fix nullability warning by explicitly converting to non-nullable objects
+        return _serviceProvider.GetServices(serviceType).OfType<object>();
     }
 }

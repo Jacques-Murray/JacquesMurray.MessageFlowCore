@@ -76,7 +76,7 @@ public class ServiceContainer
         if (serviceType.IsGenericType)
         {
             var openGenericType = serviceType.GetGenericTypeDefinition();
-            
+
             // Find all matching open generic registrations
             var matchingRegistrations = _registrations
                 .Where(r => r.Key.IsGenericType && r.Key.GetGenericTypeDefinition() == openGenericType)
@@ -89,7 +89,7 @@ public class ServiceContainer
                 var bestMatch = matchingRegistrations.First().Value; // Simple strategy: pick the first one
                 return bestMatch();
             }
-            
+
             // Check directly for the open generic type
             if (_registrations.TryGetValue(openGenericType, out var openGenericFactory))
             {
@@ -119,7 +119,7 @@ public class ServiceContainer
     public IEnumerable<object> ResolveAll(Type serviceType)
     {
         var result = new List<object>();
-        
+
         // Check for exact matches
         if (_registrations.TryGetValue(serviceType, out var factory))
         {
@@ -129,7 +129,7 @@ public class ServiceContainer
                 result.Add(instance);
             }
         }
-        
+
         // Check for assignable types (for covariance/contravariance)
         foreach (var registration in _registrations)
         {
@@ -138,7 +138,7 @@ public class ServiceContainer
             {
                 continue;
             }
-            
+
             // Check if the registration is assignable to the requested service type
             if (serviceType.IsAssignableFrom(registration.Key))
             {
@@ -148,13 +148,13 @@ public class ServiceContainer
                     result.Add(instance);
                 }
             }
-            
+
             // Handle generic interface implementations
             if (serviceType.IsGenericType && registration.Key.IsGenericType)
             {
                 var openServiceType = serviceType.GetGenericTypeDefinition();
                 var openRegistrationType = registration.Key.GetGenericTypeDefinition();
-                
+
                 if (openServiceType == openRegistrationType)
                 {
                     var instance = registration.Value();

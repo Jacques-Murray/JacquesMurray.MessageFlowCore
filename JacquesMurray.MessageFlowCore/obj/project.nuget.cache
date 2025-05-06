@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "duStzS/srA4=",
+  "dgSpecHash": "LsSb8yW/tYg=",
   "success": true,
-  "projectFilePath": "d:\\Source\\Repos\\Jacques-Murray\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore.csproj",
+  "projectFilePath": "D:\\Source\\Repos\\Jacques-Murray\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore\\JacquesMurray.MessageFlowCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jmmur\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0-preview.4.24266.19\\microsoft.extensions.dependencyinjection.abstractions.9.0.0-preview.4.24266.19.nupkg.sha512"
   ],

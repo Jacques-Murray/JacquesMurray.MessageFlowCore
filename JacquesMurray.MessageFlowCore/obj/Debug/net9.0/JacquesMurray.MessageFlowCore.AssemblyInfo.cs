@@ -16,7 +16,7 @@ using System.Reflection;
     "ponse, commands, queries, notifications and events, both synchronous and async w" +
     "ith intelligent dispatching via C# generic variance."))]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd7b6f7e3a80838d06f99da87d2bb26708f83a9b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0-preview.1+c17c58fedc5573d69e1c917de335d19f7eae28d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("JacquesMurray.MessageFlowCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JacquesMurray.MessageFlowCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

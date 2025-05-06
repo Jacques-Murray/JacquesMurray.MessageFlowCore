@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>JacquesMurray.MessageFlowCore</id>
-    <version>1.0.0</version>
+    <version>1.0.0-preview.1</version>
     <authors>Jacques Murray</authors>
     <license type="expression">MIT</license>
     <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
@@ -17,5 +17,6 @@
   </metadata>
   <files>
     <file src="D:\Source\Repos\Jacques-Murray\JacquesMurray.MessageFlowCore\JacquesMurray.MessageFlowCore\bin\Debug\net9.0\JacquesMurray.MessageFlowCore.dll" target="lib\net9.0\JacquesMurray.MessageFlowCore.dll" />
+    <file src="D:\Source\Repos\Jacques-Murray\JacquesMurray.MessageFlowCore\JacquesMurray.MessageFlowCore\README.md" target="\README.md" />
   </files>
 </package>
