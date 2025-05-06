@@ -19,8 +19,14 @@
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <RepositoryUrl>https://github.com/Jacques-Murray/JacquesMurray.MessageFlowCore.git</RepositoryUrl>
+    <!-- Add explicit readme reference -->
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <!-- Treat warnings as errors in CI build -->
     <TreatWarningsAsErrors Condition="'$(CI)' == 'true'">true</TreatWarningsAsErrors>
+    <!-- Force the build to generate a TFM-specific output directory -->
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
+    <!-- Explicitly set nullable warnings as errors in CI -->
+    <WarningsAsErrors Condition="'$(CI)' == 'true'">nullable</WarningsAsErrors>
   </PropertyGroup>
 
   <ItemGroup>
