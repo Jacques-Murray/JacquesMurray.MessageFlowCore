@@ -86,13 +86,13 @@ public sealed class MediatorBuilder
     private void RegisterHandlerInstance<THandler>(THandler handler)
     {
         var handlerType = typeof(THandler);
-        RegisterHandlerInterfaces(handlerType, () => handler!);
+        RegisterHandlerInterfaces(handlerType, () => handler ?? throw new InvalidOperationException("Handler instance is null."));
     }
 
     private void RegisterHandlerFactory<THandler>(Func<THandler> factory)
     {
         var handlerType = typeof(THandler);
-        RegisterHandlerInterfaces(handlerType, () => factory()!);
+        RegisterHandlerInterfaces(handlerType, () => factory() ?? throw new InvalidOperationException("Factory returned null."));
     }
 
     private void ScanAndRegisterHandlers(Assembly assembly)
@@ -127,7 +127,7 @@ public sealed class MediatorBuilder
     {
         // Simple factory that uses default constructor
         // In a real application, this might use dependency injection
-        return () => Activator.CreateInstance(handlerType)!;
+        return () => Activator.CreateInstance(handlerType) ?? throw new InvalidOperationException($"Unable to create instance of type {handlerType.FullName}.");
     }
 
     private void RegisterHandlerInterfaces(Type handlerType, Func<object> handlerFactory)

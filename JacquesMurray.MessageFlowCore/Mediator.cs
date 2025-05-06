@@ -43,9 +43,9 @@ public sealed class Mediator : IMediator
             }
             return handler.Handle((dynamic)request);
         }
-        catch (InvalidOperationException)
+        catch (InvalidOperationException ex)
         {
-            throw new InvalidOperationException($"No handler registered for request type: {requestType.Name}");
+            throw new InvalidOperationException($"No handler registered for request type: {requestType.Name}", ex);
         }
     }
 
@@ -72,9 +72,9 @@ public sealed class Mediator : IMediator
             }
             return await handler.HandleAsync((dynamic)request, cancellationToken);
         }
-        catch (InvalidOperationException)
+        catch (InvalidOperationException ex)
         {
-            throw new InvalidOperationException($"No async handler registered for request type: {requestType.Name}");
+            throw new InvalidOperationException($"No async handler registered for request type: {requestType.Name}", ex);
         }
     }
 

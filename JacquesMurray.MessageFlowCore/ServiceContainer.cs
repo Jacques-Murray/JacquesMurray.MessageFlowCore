@@ -66,6 +66,7 @@ public class ServiceContainer
     /// <exception cref="InvalidOperationException">Thrown when the service type is not registered.</exception>
     public object? Resolve(Type serviceType)
     {
+        // Check for exact match first
         if (_registrations.TryGetValue(serviceType, out var factory))
         {
             return factory();
@@ -75,6 +76,21 @@ public class ServiceContainer
         if (serviceType.IsGenericType)
         {
             var openGenericType = serviceType.GetGenericTypeDefinition();
+            
+            // Find all matching open generic registrations
+            var matchingRegistrations = _registrations
+                .Where(r => r.Key.IsGenericType && r.Key.GetGenericTypeDefinition() == openGenericType)
+                .ToList();
+
+            if (matchingRegistrations.Any())
+            {
+                // If multiple registrations exist, you might want to implement a strategy to pick the right one
+                // For example, you could prioritize registrations based on specific type constraints
+                var bestMatch = matchingRegistrations.First().Value; // Simple strategy: pick the first one
+                return bestMatch();
+            }
+            
+            // Check directly for the open generic type
             if (_registrations.TryGetValue(openGenericType, out var openGenericFactory))
             {
                 return openGenericFactory();
